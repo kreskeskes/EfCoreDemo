@@ -1,0 +1,67 @@
+[
+  {
+    "Id": 1,
+    "Title": "Alice's Tech Blog",
+    "OwnerId": 1
+  },
+  {
+    "Id": 2,
+    "Title": "Bob's Travel Blog",
+    "OwnerId": 2
+  },
+  {
+    "Id": 3,
+    "Title": "Orphan Blog (no owner)",
+    "OwnerId": null
+  },
+  {
+    "Id": 4,
+    "Title": "C# & .NET Adventures",
+    "OwnerId": 1
+  },
+  {
+    "Id": 5,
+    "Title": "Cloud Odyssey",
+    "OwnerId": 4
+  },
+  {
+    "Id": 6,
+    "Title": "Food Trails",
+    "OwnerId": 5
+  },
+  {
+    "Id": 7,
+    "Title": "Data Science Notes",
+    "OwnerId": 6
+  },
+  {
+    "Id": 8,
+    "Title": "Mobile Dev Diary",
+    "OwnerId": 7
+  },
+  {
+    "Id": 9,
+    "Title": "Gaming & Graphics",
+    "OwnerId": 8
+  },
+  {
+    "Id": 10,
+    "Title": "Photography Corner",
+    "OwnerId": 9
+  },
+  {
+    "Id": 11,
+    "Title": "Daily Algorithms",
+    "OwnerId": 10
+  },
+  {
+    "Id": 12,
+    "Title": "Cycling Europe",
+    "OwnerId": 11
+  },
+  {
+    "Id": 13,
+    "Title": "Minimalist Living",
+    "OwnerId": 12
+  }
+]

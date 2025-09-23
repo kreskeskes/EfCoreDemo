@@ -1,0 +1,98 @@
+[
+  {
+    "Id": 1,
+    "Name": "EFCore"
+  },
+  {
+    "Id": 2,
+    "Name": "CSharp"
+  },
+  {
+    "Id": 3,
+    "Name": "Travel"
+  },
+  {
+    "Id": 4,
+    "Name": "ASP.NET"
+  },
+  {
+    "Id": 5,
+    "Name": "LINQ"
+  },
+  {
+    "Id": 6,
+    "Name": "SQL"
+  },
+  {
+    "Id": 7,
+    "Name": "Testing"
+  },
+  {
+    "Id": 8,
+    "Name": "DevOps"
+  },
+  {
+    "Id": 9,
+    "Name": "Docker"
+  },
+  {
+    "Id": 10,
+    "Name": "Kubernetes"
+  },
+  {
+    "Id": 11,
+    "Name": "Cloud"
+  },
+  {
+    "Id": 12,
+    "Name": "Azure"
+  },
+  {
+    "Id": 13,
+    "Name": "GCP"
+  },
+  {
+    "Id": 14,
+    "Name": "AWS"
+  },
+  {
+    "Id": 15,
+    "Name": "Recipes"
+  },
+  {
+    "Id": 16,
+    "Name": "Photography"
+  },
+  {
+    "Id": 17,
+    "Name": "Cycling"
+  },
+  {
+    "Id": 18,
+    "Name": "Minimalism"
+  },
+  {
+    "Id": 19,
+    "Name": "Mobile"
+  },
+  {
+    "Id": 20,
+    "Name": "Unity"
+  },
+  {
+    "Id": 21,
+    "Name": "Graphics"
+  },
+  {
+    "Id": 22,
+    "Name": "DataScience"
+  },
+  {
+    "Id": 23,
+    "Name": "MachineLearning"
+  },
+  {
+    "Id": 24,
+    "Name": "AI"
+  }
+]

@@ -1,0 +1,1290 @@
+[
+  {
+    "PostId": 1,
+    "TagId": 21
+  },
+  {
+    "PostId": 1,
+    "TagId": 8
+  },
+  {
+    "PostId": 2,
+    "TagId": 4
+  },
+  {
+    "PostId": 3,
+    "TagId": 15
+  },
+  {
+    "PostId": 3,
+    "TagId": 17
+  },
+  {
+    "PostId": 3,
+    "TagId": 11
+  },
+  {
+    "PostId": 4,
+    "TagId": 19
+  },
+  {
+    "PostId": 4,
+    "TagId": 4
+  },
+  {
+    "PostId": 5,
+    "TagId": 19
+  },
+  {
+    "PostId": 6,
+    "TagId": 7
+  },
+  {
+    "PostId": 6,
+    "TagId": 20
+  },
+  {
+    "PostId": 6,
+    "TagId": 1
+  },
+  {
+    "PostId": 6,
+    "TagId": 4
+  },
+  {
+    "PostId": 7,
+    "TagId": 13
+  },
+  {
+    "PostId": 7,
+    "TagId": 7
+  },
+  {
+    "PostId": 7,
+    "TagId": 23
+  },
+  {
+    "PostId": 7,
+    "TagId": 5
+  },
+  {
+    "PostId": 8,
+    "TagId": 22
+  },
+  {
+    "PostId": 8,
+    "TagId": 8
+  },
+  {
+    "PostId": 8,
+    "TagId": 19
+  },
+  {
+    "PostId": 8,
+    "TagId": 9
+  },
+  {
+    "PostId": 8,
+    "TagId": 4
+  },
+  {
+    "PostId": 9,
+    "TagId": 5
+  },
+  {
+    "PostId": 9,
+    "TagId": 23
+  },
+  {
+    "PostId": 9,
+    "TagId": 21
+  },
+  {
+    "PostId": 9,
+    "TagId": 16
+  },
+  {
+    "PostId": 10,
+    "TagId": 15
+  },
+  {
+    "PostId": 10,
+    "TagId": 3
+  },
+  {
+    "PostId": 10,
+    "TagId": 11
+  },
+  {
+    "PostId": 10,
+    "TagId": 16
+  },
+  {
+    "PostId": 12,
+    "TagId": 11
+  },
+  {
+    "PostId": 12,
+    "TagId": 18
+  },
+  {
+    "PostId": 12,
+    "TagId": 16
+  },
+  {
+    "PostId": 12,
+    "TagId": 14
+  },
+  {
+    "PostId": 12,
+    "TagId": 10
+  },
+  {
+    "PostId": 13,
+    "TagId": 16
+  },
+  {
+    "PostId": 13,
+    "TagId": 3
+  },
+  {
+    "PostId": 13,
+    "TagId": 18
+  },
+  {
+    "PostId": 13,
+    "TagId": 17
+  },
+  {
+    "PostId": 13,
+    "TagId": 6
+  },
+  {
+    "PostId": 15,
+    "TagId": 13
+  },
+  {
+    "PostId": 15,
+    "TagId": 17
+  },
+  {
+    "PostId": 16,
+    "TagId": 4
+  },
+  {
+    "PostId": 17,
+    "TagId": 24
+  },
+  {
+    "PostId": 19,
+    "TagId": 7
+  },
+  {
+    "PostId": 19,
+    "TagId": 20
+  },
+  {
+    "PostId": 19,
+    "TagId": 13
+  },
+  {
+    "PostId": 20,
+    "TagId": 24
+  },
+  {
+    "PostId": 20,
+    "TagId": 16
+  },
+  {
+    "PostId": 20,
+    "TagId": 9
+  },
+  {
+    "PostId": 20,
+    "TagId": 23
+  },
+  {
+    "PostId": 20,
+    "TagId": 19
+  },
+  {
+    "PostId": 21,
+    "TagId": 12
+  },
+  {
+    "PostId": 21,
+    "TagId": 16
+  },
+  {
+    "PostId": 21,
+    "TagId": 22
+  },
+  {
+    "PostId": 21,
+    "TagId": 20
+  },
+  {
+    "PostId": 22,
+    "TagId": 23
+  },
+  {
+    "PostId": 22,
+    "TagId": 5
+  },
+  {
+    "PostId": 23,
+    "TagId": 9
+  },
+  {
+    "PostId": 23,
+    "TagId": 6
+  },
+  {
+    "PostId": 23,
+    "TagId": 1
+  },
+  {
+    "PostId": 23,
+    "TagId": 5
+  },
+  {
+    "PostId": 23,
+    "TagId": 2
+  },
+  {
+    "PostId": 23,
+    "TagId": 3
+  },
+  {
+    "PostId": 24,
+    "TagId": 7
+  },
+  {
+    "PostId": 24,
+    "TagId": 20
+  },
+  {
+    "PostId": 25,
+    "TagId": 11
+  },
+  {
+    "PostId": 25,
+    "TagId": 5
+  },
+  {
+    "PostId": 26,
+    "TagId": 23
+  },
+  {
+    "PostId": 26,
+    "TagId": 8
+  },
+  {
+    "PostId": 26,
+    "TagId": 11
+  },
+  {
+    "PostId": 26,
+    "TagId": 24
+  },
+  {
+    "PostId": 26,
+    "TagId": 17
+  },
+  {
+    "PostId": 27,
+    "TagId": 20
+  },
+  {
+    "PostId": 27,
+    "TagId": 21
+  },
+  {
+    "PostId": 27,
+    "TagId": 1
+  },
+  {
+    "PostId": 28,
+    "TagId": 14
+  },
+  {
+    "PostId": 28,
+    "TagId": 11
+  },
+  {
+    "PostId": 29,
+    "TagId": 23
+  },
+  {
+    "PostId": 29,
+    "TagId": 2
+  },
+  {
+    "PostId": 29,
+    "TagId": 20
+  },
+  {
+    "PostId": 29,
+    "TagId": 7
+  },
+  {
+    "PostId": 29,
+    "TagId": 22
+  },
+  {
+    "PostId": 29,
+    "TagId": 10
+  },
+  {
+    "PostId": 30,
+    "TagId": 24
+  },
+  {
+    "PostId": 30,
+    "TagId": 22
+  },
+  {
+    "PostId": 31,
+    "TagId": 24
+  },
+  {
+    "PostId": 31,
+    "TagId": 5
+  },
+  {
+    "PostId": 31,
+    "TagId": 21
+  },
+  {
+    "PostId": 31,
+    "TagId": 19
+  },
+  {
+    "PostId": 31,
+    "TagId": 18
+  },
+  {
+    "PostId": 32,
+    "TagId": 14
+  },
+  {
+    "PostId": 32,
+    "TagId": 16
+  },
+  {
+    "PostId": 33,
+    "TagId": 13
+  },
+  {
+    "PostId": 33,
+    "TagId": 11
+  },
+  {
+    "PostId": 33,
+    "TagId": 12
+  },
+  {
+    "PostId": 33,
+    "TagId": 2
+  },
+  {
+    "PostId": 34,
+    "TagId": 13
+  },
+  {
+    "PostId": 34,
+    "TagId": 21
+  },
+  {
+    "PostId": 34,
+    "TagId": 19
+  },
+  {
+    "PostId": 34,
+    "TagId": 1
+  },
+  {
+    "PostId": 35,
+    "TagId": 14
+  },
+  {
+    "PostId": 35,
+    "TagId": 5
+  },
+  {
+    "PostId": 35,
+    "TagId": 22
+  },
+  {
+    "PostId": 35,
+    "TagId": 12
+  },
+  {
+    "PostId": 36,
+    "TagId": 9
+  },
+  {
+    "PostId": 37,
+    "TagId": 21
+  },
+  {
+    "PostId": 37,
+    "TagId": 4
+  },
+  {
+    "PostId": 37,
+    "TagId": 20
+  },
+  {
+    "PostId": 38,
+    "TagId": 20
+  },
+  {
+    "PostId": 38,
+    "TagId": 2
+  },
+  {
+    "PostId": 39,
+    "TagId": 21
+  },
+  {
+    "PostId": 39,
+    "TagId": 19
+  },
+  {
+    "PostId": 39,
+    "TagId": 22
+  },
+  {
+    "PostId": 39,
+    "TagId": 10
+  },
+  {
+    "PostId": 40,
+    "TagId": 3
+  },
+  {
+    "PostId": 40,
+    "TagId": 19
+  },
+  {
+    "PostId": 41,
+    "TagId": 18
+  },
+  {
+    "PostId": 42,
+    "TagId": 3
+  },
+  {
+    "PostId": 42,
+    "TagId": 16
+  },
+  {
+    "PostId": 42,
+    "TagId": 22
+  },
+  {
+    "PostId": 42,
+    "TagId": 11
+  },
+  {
+    "PostId": 43,
+    "TagId": 3
+  },
+  {
+    "PostId": 43,
+    "TagId": 16
+  },
+  {
+    "PostId": 43,
+    "TagId": 15
+  },
+  {
+    "PostId": 43,
+    "TagId": 21
+  },
+  {
+    "PostId": 44,
+    "TagId": 16
+  },
+  {
+    "PostId": 44,
+    "TagId": 9
+  },
+  {
+    "PostId": 46,
+    "TagId": 16
+  },
+  {
+    "PostId": 46,
+    "TagId": 3
+  },
+  {
+    "PostId": 46,
+    "TagId": 15
+  },
+  {
+    "PostId": 46,
+    "TagId": 18
+  },
+  {
+    "PostId": 46,
+    "TagId": 11
+  },
+  {
+    "PostId": 46,
+    "TagId": 9
+  },
+  {
+    "PostId": 48,
+    "TagId": 18
+  },
+  {
+    "PostId": 48,
+    "TagId": 15
+  },
+  {
+    "PostId": 48,
+    "TagId": 16
+  },
+  {
+    "PostId": 48,
+    "TagId": 3
+  },
+  {
+    "PostId": 48,
+    "TagId": 10
+  },
+  {
+    "PostId": 48,
+    "TagId": 17
+  },
+  {
+    "PostId": 49,
+    "TagId": 20
+  },
+  {
+    "PostId": 49,
+    "TagId": 12
+  },
+  {
+    "PostId": 49,
+    "TagId": 8
+  },
+  {
+    "PostId": 49,
+    "TagId": 22
+  },
+  {
+    "PostId": 49,
+    "TagId": 9
+  },
+  {
+    "PostId": 50,
+    "TagId": 20
+  },
+  {
+    "PostId": 50,
+    "TagId": 7
+  },
+  {
+    "PostId": 50,
+    "TagId": 1
+  },
+  {
+    "PostId": 50,
+    "TagId": 21
+  },
+  {
+    "PostId": 50,
+    "TagId": 16
+  },
+  {
+    "PostId": 51,
+    "TagId": 10
+  },
+  {
+    "PostId": 51,
+    "TagId": 20
+  },
+  {
+    "PostId": 51,
+    "TagId": 22
+  },
+  {
+    "PostId": 51,
+    "TagId": 2
+  },
+  {
+    "PostId": 51,
+    "TagId": 7
+  },
+  {
+    "PostId": 51,
+    "TagId": 12
+  },
+  {
+    "PostId": 52,
+    "TagId": 6
+  },
+  {
+    "PostId": 52,
+    "TagId": 11
+  },
+  {
+    "PostId": 52,
+    "TagId": 14
+  },
+  {
+    "PostId": 53,
+    "TagId": 8
+  },
+  {
+    "PostId": 53,
+    "TagId": 9
+  },
+  {
+    "PostId": 54,
+    "TagId": 10
+  },
+  {
+    "PostId": 54,
+    "TagId": 9
+  },
+  {
+    "PostId": 54,
+    "TagId": 8
+  },
+  {
+    "PostId": 56,
+    "TagId": 11
+  },
+  {
+    "PostId": 56,
+    "TagId": 23
+  },
+  {
+    "PostId": 56,
+    "TagId": 18
+  },
+  {
+    "PostId": 57,
+    "TagId": 2
+  },
+  {
+    "PostId": 57,
+    "TagId": 8
+  },
+  {
+    "PostId": 57,
+    "TagId": 7
+  },
+  {
+    "PostId": 57,
+    "TagId": 10
+  },
+  {
+    "PostId": 59,
+    "TagId": 20
+  },
+  {
+    "PostId": 59,
+    "TagId": 7
+  },
+  {
+    "PostId": 59,
+    "TagId": 2
+  },
+  {
+    "PostId": 59,
+    "TagId": 16
+  },
+  {
+    "PostId": 59,
+    "TagId": 1
+  },
+  {
+    "PostId": 61,
+    "TagId": 11
+  },
+  {
+    "PostId": 61,
+    "TagId": 4
+  },
+  {
+    "PostId": 61,
+    "TagId": 22
+  },
+  {
+    "PostId": 62,
+    "TagId": 14
+  },
+  {
+    "PostId": 62,
+    "TagId": 5
+  },
+  {
+    "PostId": 62,
+    "TagId": 8
+  },
+  {
+    "PostId": 64,
+    "TagId": 19
+  },
+  {
+    "PostId": 64,
+    "TagId": 17
+  },
+  {
+    "PostId": 65,
+    "TagId": 9
+  },
+  {
+    "PostId": 65,
+    "TagId": 4
+  },
+  {
+    "PostId": 65,
+    "TagId": 11
+  },
+  {
+    "PostId": 66,
+    "TagId": 9
+  },
+  {
+    "PostId": 66,
+    "TagId": 22
+  },
+  {
+    "PostId": 66,
+    "TagId": 8
+  },
+  {
+    "PostId": 66,
+    "TagId": 6
+  },
+  {
+    "PostId": 67,
+    "TagId": 23
+  },
+  {
+    "PostId": 67,
+    "TagId": 22
+  },
+  {
+    "PostId": 67,
+    "TagId": 10
+  },
+  {
+    "PostId": 67,
+    "TagId": 2
+  },
+  {
+    "PostId": 67,
+    "TagId": 16
+  },
+  {
+    "PostId": 68,
+    "TagId": 12
+  },
+  {
+    "PostId": 68,
+    "TagId": 14
+  },
+  {
+    "PostId": 68,
+    "TagId": 16
+  },
+  {
+    "PostId": 69,
+    "TagId": 6
+  },
+  {
+    "PostId": 69,
+    "TagId": 13
+  },
+  {
+    "PostId": 69,
+    "TagId": 24
+  },
+  {
+    "PostId": 69,
+    "TagId": 12
+  },
+  {
+    "PostId": 69,
+    "TagId": 10
+  },
+  {
+    "PostId": 71,
+    "TagId": 2
+  },
+  {
+    "PostId": 71,
+    "TagId": 22
+  },
+  {
+    "PostId": 71,
+    "TagId": 8
+  },
+  {
+    "PostId": 72,
+    "TagId": 11
+  },
+  {
+    "PostId": 72,
+    "TagId": 13
+  },
+  {
+    "PostId": 72,
+    "TagId": 5
+  },
+  {
+    "PostId": 72,
+    "TagId": 9
+  },
+  {
+    "PostId": 74,
+    "TagId": 3
+  },
+  {
+    "PostId": 74,
+    "TagId": 16
+  },
+  {
+    "PostId": 74,
+    "TagId": 18
+  },
+  {
+    "PostId": 74,
+    "TagId": 7
+  },
+  {
+    "PostId": 75,
+    "TagId": 3
+  },
+  {
+    "PostId": 75,
+    "TagId": 18
+  },
+  {
+    "PostId": 75,
+    "TagId": 14
+  },
+  {
+    "PostId": 75,
+    "TagId": 2
+  },
+  {
+    "PostId": 76,
+    "TagId": 3
+  },
+  {
+    "PostId": 76,
+    "TagId": 24
+  },
+  {
+    "PostId": 77,
+    "TagId": 18
+  },
+  {
+    "PostId": 77,
+    "TagId": 3
+  },
+  {
+    "PostId": 77,
+    "TagId": 16
+  },
+  {
+    "PostId": 78,
+    "TagId": 3
+  },
+  {
+    "PostId": 78,
+    "TagId": 20
+  },
+  {
+    "PostId": 79,
+    "TagId": 3
+  },
+  {
+    "PostId": 79,
+    "TagId": 16
+  },
+  {
+    "PostId": 79,
+    "TagId": 18
+  },
+  {
+    "PostId": 79,
+    "TagId": 21
+  },
+  {
+    "PostId": 79,
+    "TagId": 6
+  },
+  {
+    "PostId": 80,
+    "TagId": 16
+  },
+  {
+    "PostId": 80,
+    "TagId": 3
+  },
+  {
+    "PostId": 81,
+    "TagId": 18
+  },
+  {
+    "PostId": 81,
+    "TagId": 16
+  },
+  {
+    "PostId": 81,
+    "TagId": 3
+  },
+  {
+    "PostId": 82,
+    "TagId": 22
+  },
+  {
+    "PostId": 82,
+    "TagId": 12
+  },
+  {
+    "PostId": 82,
+    "TagId": 16
+  },
+  {
+    "PostId": 83,
+    "TagId": 10
+  },
+  {
+    "PostId": 83,
+    "TagId": 7
+  },
+  {
+    "PostId": 83,
+    "TagId": 19
+  },
+  {
+    "PostId": 83,
+    "TagId": 11
+  },
+  {
+    "PostId": 84,
+    "TagId": 4
+  },
+  {
+    "PostId": 84,
+    "TagId": 22
+  },
+  {
+    "PostId": 84,
+    "TagId": 6
+  },
+  {
+    "PostId": 85,
+    "TagId": 21
+  },
+  {
+    "PostId": 85,
+    "TagId": 9
+  },
+  {
+    "PostId": 85,
+    "TagId": 1
+  },
+  {
+    "PostId": 85,
+    "TagId": 19
+  },
+  {
+    "PostId": 85,
+    "TagId": 20
+  },
+  {
+    "PostId": 86,
+    "TagId": 23
+  },
+  {
+    "PostId": 87,
+    "TagId": 2
+  },
+  {
+    "PostId": 87,
+    "TagId": 14
+  },
+  {
+    "PostId": 87,
+    "TagId": 20
+  },
+  {
+    "PostId": 88,
+    "TagId": 17
+  },
+  {
+    "PostId": 89,
+    "TagId": 3
+  },
+  {
+    "PostId": 89,
+    "TagId": 17
+  },
+  {
+    "PostId": 89,
+    "TagId": 14
+  },
+  {
+    "PostId": 90,
+    "TagId": 11
+  },
+  {
+    "PostId": 90,
+    "TagId": 18
+  },
+  {
+    "PostId": 90,
+    "TagId": 3
+  },
+  {
+    "PostId": 90,
+    "TagId": 15
+  },
+  {
+    "PostId": 90,
+    "TagId": 7
+  },
+  {
+    "PostId": 91,
+    "TagId": 17
+  },
+  {
+    "PostId": 91,
+    "TagId": 18
+  },
+  {
+    "PostId": 91,
+    "TagId": 15
+  },
+  {
+    "PostId": 92,
+    "TagId": 15
+  },
+  {
+    "PostId": 92,
+    "TagId": 16
+  },
+  {
+    "PostId": 92,
+    "TagId": 24
+  },
+  {
+    "PostId": 93,
+    "TagId": 16
+  },
+  {
+    "PostId": 93,
+    "TagId": 18
+  },
+  {
+    "PostId": 93,
+    "TagId": 11
+  },
+  {
+    "PostId": 93,
+    "TagId": 3
+  },
+  {
+    "PostId": 93,
+    "TagId": 9
+  },
+  {
+    "PostId": 94,
+    "TagId": 16
+  },
+  {
+    "PostId": 94,
+    "TagId": 17
+  },
+  {
+    "PostId": 94,
+    "TagId": 18
+  },
+  {
+    "PostId": 94,
+    "TagId": 3
+  },
+  {
+    "PostId": 95,
+    "TagId": 23
+  },
+  {
+    "PostId": 95,
+    "TagId": 13
+  },
+  {
+    "PostId": 95,
+    "TagId": 22
+  },
+  {
+    "PostId": 96,
+    "TagId": 24
+  },
+  {
+    "PostId": 96,
+    "TagId": 20
+  },
+  {
+    "PostId": 96,
+    "TagId": 9
+  },
+  {
+    "PostId": 96,
+    "TagId": 3
+  },
+  {
+    "PostId": 97,
+    "TagId": 11
+  },
+  {
+    "PostId": 98,
+    "TagId": 20
+  },
+  {
+    "PostId": 98,
+    "TagId": 22
+  },
+  {
+    "PostId": 98,
+    "TagId": 23
+  },
+  {
+    "PostId": 98,
+    "TagId": 2
+  },
+  {
+    "PostId": 98,
+    "TagId": 1
+  },
+  {
+    "PostId": 99,
+    "TagId": 10
+  },
+  {
+    "PostId": 99,
+    "TagId": 13
+  },
+  {
+    "PostId": 99,
+    "TagId": 22
+  },
+  {
+    "PostId": 99,
+    "TagId": 12
+  },
+  {
+    "PostId": 100,
+    "TagId": 19
+  },
+  {
+    "PostId": 101,
+    "TagId": 11
+  },
+  {
+    "PostId": 101,
+    "TagId": 15
+  },
+  {
+    "PostId": 101,
+    "TagId": 5
+  },
+  {
+    "PostId": 101,
+    "TagId": 3
+  },
+  {
+    "PostId": 101,
+    "TagId": 23
+  },
+  {
+    "PostId": 102,
+    "TagId": 9
+  },
+  {
+    "PostId": 102,
+    "TagId": 4
+  },
+  {
+    "PostId": 102,
+    "TagId": 2
+  },
+  {
+    "PostId": 103,
+    "TagId": 9
+  },
+  {
+    "PostId": 103,
+    "TagId": 24
+  },
+  {
+    "PostId": 103,
+    "TagId": 12
+  },
+  {
+    "PostId": 103,
+    "TagId": 14
+  },
+  {
+    "PostId": 104,
+    "TagId": 17
+  },
+  {
+    "PostId": 104,
+    "TagId": 11
+  },
+  {
+    "PostId": 104,
+    "TagId": 14
+  },
+  {
+    "PostId": 105,
+    "TagId": 5
+  },
+  {
+    "PostId": 105,
+    "TagId": 18
+  },
+  {
+    "PostId": 105,
+    "TagId": 22
+  },
+  {
+    "PostId": 105,
+    "TagId": 21
+  },
+  {
+    "PostId": 105,
+    "TagId": 2
+  },
+  {
+    "PostId": 106,
+    "TagId": 8
+  },
+  {
+    "PostId": 1,
+    "TagId": 1
+  },
+  {
+    "PostId": 1,
+    "TagId": 2
+  },
+  {
+    "PostId": 2,
+    "TagId": 1
+  },
+  {
+    "PostId": 3,
+    "TagId": 3
+  }
+]

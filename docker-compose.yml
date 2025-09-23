@@ -1,0 +1,12 @@
+services:
+  efCoreDemo:
+    build:
+      context: .
+      dockerfile: EfCoreDemo/Dockerfile
+    depends_on: 
+    - db
+    
+  db:
+    image: postgres
+volumes:
+  postgres_efCoreDemo:
