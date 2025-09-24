@@ -24,7 +24,7 @@
             foreach (var e in ChangeTracker.Entries<BaseEntity>())
             {
                 //if (e.State == EntityState.Added) e.Entity.CreatedAtUtc = now;
-                // if (e.State == EntityState.Modified) e.Entity.UpdatedAtUtc = now;
+                if (e.State == EntityState.Modified) e.Entity.UpdatedAtUtc = now;
             }
             return base.SaveChangesAsync(ct);
         }
