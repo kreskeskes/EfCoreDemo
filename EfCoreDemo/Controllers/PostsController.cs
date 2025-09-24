@@ -3,6 +3,7 @@ using Infrastructure;
 using Infrastructure.ServiceContracts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace EfCoreDemo.Controllers
 {
@@ -28,13 +29,27 @@ namespace EfCoreDemo.Controllers
         [HttpGet("detailed/single")]
         public async Task<IActionResult> GetDetailedSingle(CancellationToken ct)
         {
-            return Ok(await postService.GetPostsDetailed_AsSingle(ct));
+            var sw = Stopwatch.StartNew();
+            long before = GC.GetAllocatedBytesForCurrentThread();
+
+            var result = await postService.GetPostsDetailed_AsSingle(ct);
+
+            long allocated = GC.GetAllocatedBytesForCurrentThread() - before;
+            sw.Stop();
+            return Ok(new { BytesAllocated = allocated, Result = result });
         }
 
         [HttpGet("detailed/split")]
         public async Task<IActionResult> GetDetailedSplit(CancellationToken ct)
         {
-            return Ok(await postService.GetPostsDetailed_AsSplit(ct));
+            var sw = Stopwatch.StartNew();
+            long before = GC.GetAllocatedBytesForCurrentThread();
+
+            var result = await postService.GetPostsDetailed_AsSplit(ct);
+
+            long allocated = GC.GetAllocatedBytesForCurrentThread() - before;
+            sw.Stop();
+            return Ok(new { BytesAllocated = allocated, Result = result });
         }
 
 
