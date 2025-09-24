@@ -24,6 +24,20 @@ namespace EfCoreDemo.Controllers
             return post is null ? NotFound() : Ok(post);
         }
 
+
+        [HttpGet("detailed/single")]
+        public async Task<IActionResult> GetDetailedSingle(CancellationToken ct)
+        {
+            return Ok(await postService.GetPostsDetailed_AsSingle(ct));
+        }
+
+        [HttpGet("detailed/split")]
+        public async Task<IActionResult> GetDetailedSplit(CancellationToken ct)
+        {
+            return Ok(await postService.GetPostsDetailed_AsSplit(ct));
+        }
+
+
         [HttpDelete("{id:int}/comments/old/materialize")]
         public async Task<IActionResult> DeleteOldCommentsMaterialize(
             int id,

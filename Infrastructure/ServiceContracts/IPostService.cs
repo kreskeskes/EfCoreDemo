@@ -28,5 +28,16 @@
         /// Deletes a post (behavior depends on related FK DeleteBehavior).
         /// </summary>
         Task<bool> DeleteAsync(int postId, CancellationToken ct = default);
+
+        /// <summary>
+        /// Loads a detailed post graph using AsSplitQuery to avoid cartesian explosion.
+        /// </summary>
+        Task<List<Post>> GetPostsDetailed_AsSplit(CancellationToken ct = default);
+
+        /// <summary>
+        /// Loads a detailed post graph as a single query (demonstrates cartesian explosion risk).
+        /// </summary>
+        Task<List<Post>> GetPostsDetailed_AsSingle(CancellationToken ct = default);
+
     }
 }

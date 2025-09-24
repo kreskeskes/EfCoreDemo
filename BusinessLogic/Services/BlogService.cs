@@ -7,32 +7,6 @@ namespace BusinessLogic.Services
 {
     public class BlogService(ApplicationDbContext dbContext, ILogger<BlogService> logger) : IBlogService
     {
-
-        // === Include: Single vs Split ============================================
-        public async Task<List<Blog>> GetBlogsDetailed_AsSplit(CancellationToken ct = default)
-        {
-            return await dbContext.Blogs
-               .AsSplitQuery()
-               .Include(b => b.Owner)
-               .Include(b => b.Posts.OrderByDescending(p => p.CreatedAtUtc))
-                   .ThenInclude(p => p.Author)
-               .AsNoTracking()
-               .TagWith("BlogFull:SplitQuery")
-               .ToListAsync(ct);
-        }
-
-        public async Task<List<Blog>> GetBlogsDetailed_AsSingle(CancellationToken ct = default)
-        {
-            return await dbContext.Blogs
-                .AsSingleQuery()
-                .Include(b => b.Owner)
-                .Include(b => b.Posts.OrderByDescending(p => p.CreatedAtUtc))
-                    .ThenInclude(p => p.Author)
-                .AsNoTracking()
-                .TagWith("BlogFull:SingleQuery")
-                .ToListAsync(ct);
-        }
-
         // === Explicit loading =====================================================
         public async Task<Blog?> LoadNavigationsExplicitlyAsync(int blogId, bool loadPosts = true, bool loadOwner = false, CancellationToken ct = default)
         {

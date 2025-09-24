@@ -5,6 +5,33 @@ namespace BusinessLogic.Services
 {
     internal class PostService(ApplicationDbContext dbContext) : IPostService
     {
+        // === Include: Single vs Split ============================================
+        public async Task<List<Post>> GetPostsDetailed_AsSplit(CancellationToken ct = default)
+        {
+            return await dbContext.Posts
+               .AsSplitQuery()
+                .Include(p => p.Author)
+                .Include(p => p.Blog)
+                .Include(p => p.Comments)
+                .Include(p => p.PostTags)
+                .AsNoTracking()
+               .TagWith("PostsFull:SplitQuery")
+               .ToListAsync(ct);
+        }
+
+        public async Task<List<Post>> GetPostsDetailed_AsSingle(CancellationToken ct = default)
+        {
+            return await dbContext.Posts
+                .AsSingleQuery()
+                .Include(p => p.Author)
+                .Include(p => p.Blog)
+                .Include(p => p.Comments)
+                .Include(p => p.PostTags)
+                .AsNoTracking()
+                .TagWith("PostsFull:SingleQuery")
+                .ToListAsync(ct);
+        }
+
         // === Server-side delete: materialize vs no-materialize ====================
         public Task<int> DeleteOldComments_NoMaterializeAsync(int postId, int olderThanDays, CancellationToken ct = default)
         {

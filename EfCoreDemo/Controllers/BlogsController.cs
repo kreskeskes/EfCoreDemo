@@ -8,18 +8,6 @@ namespace EfCoreDemo.Controllers
     [Route("api/[controller]")]
     public class BlogsController(IBlogService blogService) : ControllerBase
     {
-        [HttpGet("detailed/single")]
-        public async Task<IActionResult> GetDetailedSingle(CancellationToken ct)
-        {
-            return Ok(await blogService.GetBlogsDetailed_AsSingle(ct));
-        }
-
-        [HttpGet("detailed/split")]
-        public async Task<IActionResult> GetDetailedSplit(CancellationToken ct)
-        {
-            return Ok(await blogService.GetBlogsDetailed_AsSplit(ct));
-        }
-
         [HttpPost("{id:int}/explicit-load")]
         public async Task<IActionResult> ExplicitLoad(
         int id,
