@@ -39,6 +39,14 @@ namespace Infrastructure.Seeding
             }
 
             await db.SaveChangesAsync(cancellationToken);
+
+            await db.Database.ExecuteSqlRawAsync("""
+                SELECT setval(pg_get_serial_sequence('"Users"',   'Id'), COALESCE((SELECT MAX("Id") FROM "Users"),   0));
+                SELECT setval(pg_get_serial_sequence('"Blogs"',   'Id'), COALESCE((SELECT MAX("Id") FROM "Blogs"),   0));
+                SELECT setval(pg_get_serial_sequence('"Posts"',   'Id'), COALESCE((SELECT MAX("Id") FROM "Posts"),   0));
+                SELECT setval(pg_get_serial_sequence('"Comments"','Id'), COALESCE((SELECT MAX("Id") FROM "Comments"),0));
+                SELECT setval(pg_get_serial_sequence('"Tags"',    'Id'), COALESCE((SELECT MAX("Id") FROM "Tags"),    0));
+                """, cancellationToken);
             log.LogInformation("Database seeded");
         }
 

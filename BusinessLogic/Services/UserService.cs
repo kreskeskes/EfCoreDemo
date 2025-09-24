@@ -190,7 +190,7 @@ namespace BusinessLogic.Services
             if (await dbContext.Users.AnyAsync(u => u.Email == user.Email, ct))
                 throw new InvalidOperationException($"User with email {user.Email} already exists");
 
-            dbContext.Users.Add(user);
+            await dbContext.Users.AddAsync(user, ct);
             await dbContext.SaveChangesAsync(ct);
 
             return user;
