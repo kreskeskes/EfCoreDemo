@@ -44,6 +44,13 @@ namespace EfCoreDemo.Controllers
             return ok ? Ok(new { moved = true }) : NotFound();
         }
 
+        [HttpPost("transfer-blogs-with-savepoint")]
+        public async Task<IActionResult> TransferBlogs_WithSavepoint([FromBody] TransferBlogsRequest body, CancellationToken ct)
+        {
+            var ok = await usersService.TransferBlogsWithSavepointsAsync(body.FromUserId, body.ToUserId, ct);
+            return ok ? Ok(new { moved = true }) : NotFound();
+        }
+
         // Showcases the importance of having IsUnique() index against properties in configs
         [HttpPost("demo-race/create-user")]
         public async Task<IActionResult> DemoRace([FromServices] IServiceScopeFactory sf, CancellationToken ct)
@@ -76,10 +83,10 @@ namespace EfCoreDemo.Controllers
             return await svc.CreateAsync(user, ct);
         }
 
-        [HttpGet("getWithBlogs")]
-        public async Task<IActionResult> GetUserWithBlogs([FromQuery] int userId, CancellationToken ct)
+        [HttpGet("getWithBlogsAndPosts")]
+        public async Task<IActionResult> GetUserWithBlogsAndPosts([FromQuery] int userId, CancellationToken ct)
         {
-            return Ok(await usersService.GetUserWithBlogs(userId, ct));
+            return Ok(await usersService.GetUserWithBlogsAndPosts(userId, ct));
         }
 
         [HttpPost]

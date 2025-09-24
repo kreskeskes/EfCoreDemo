@@ -105,6 +105,82 @@ namespace BusinessLogic.Services
             }
         }
 
+        public async Task<bool> TransferBlogsWithSavepointsAsync(int fromUserId, int toUserId, CancellationToken ct = default)
+        {
+            if (fromUserId == toUserId)
+                return true;
+
+            await using var tx = await dbContext.Database.BeginTransactionAsync(ct);
+
+            try
+            {
+                var users = await dbContext.Users
+                    .Where(x => x.Id == fromUserId || x.Id == toUserId)
+                    .Select(x => x.Id)
+                    .ToListAsync(ct);
+
+                if (!users.Contains(fromUserId) || !users.Contains(toUserId))
+                    return false;
+
+                // savepoint #1 — after validation
+                await tx.CreateSavepointAsync("validated", ct);
+
+                var now = DateTime.UtcNow;
+
+                int blogsUpdated;
+                try
+                {
+                    blogsUpdated = await dbContext.Blogs
+                        .Where(x => x.OwnerId == fromUserId)
+                        .TagWith("IUserService.TransferBlogsWithSavepoints: reassign blog owners")
+                        .ExecuteUpdateAsync(s => s
+                            .SetProperty(x => x.OwnerId, toUserId)
+                            .SetProperty(x => x.UpdatedAtUtc, now), ct);
+                }
+                catch
+                {
+                    // return the state for as per "validated" and rollback transaction
+                    await tx.RollbackToSavepointAsync("validated", ct);
+                    await tx.ReleaseSavepointAsync("validated", ct);
+                    await tx.RollbackAsync(ct);
+                    return false;
+                }
+
+                // savepoint #2 — after successfully updating blogs
+                await tx.CreateSavepointAsync("afterBlogs", ct);
+
+                int postsUpdated = 0;
+                try
+                {
+                    postsUpdated = await dbContext.Posts
+                        .Where(x => x.AuthorId == fromUserId)
+                        .TagWith("IUserService.TransferBlogsWithSavepoints: reassign post authors")
+                        .ExecuteUpdateAsync(s => s
+                            .SetProperty(x => x.AuthorId, toUserId)
+                            .SetProperty(x => x.UpdatedAtUtc, now), ct);
+                }
+                catch
+                {
+                    // rolling back the changes for posts transafer as they were unsuccessful
+                    // blogs will be reassigned
+                    await tx.RollbackToSavepointAsync("afterBlogs", ct);
+                    await tx.ReleaseSavepointAsync("afterBlogs", ct);
+                }
+
+                // releasing the savepoints (optional)
+                await tx.ReleaseSavepointAsync("afterBlogs", ct);
+                await tx.ReleaseSavepointAsync("validated", ct);
+
+                await tx.CommitAsync(ct);
+                return blogsUpdated > 0 || postsUpdated > 0;
+            }
+            catch
+            {
+                await tx.RollbackAsync(ct);
+                return false;
+            }
+        }
+
         // === Basic Create/Delete ==========================================================
 
         //Importance of IsUnique index
@@ -144,9 +220,9 @@ namespace BusinessLogic.Services
          await dbContext.Users.Include(x => x.Blogs).FirstOrDefaultAsync(x => x.Id==id);
 
 
-        public async Task<List<User>> GetUserWithBlogs(int id, CancellationToken ct = default)
+        public async Task<List<User>> GetUserWithBlogsAndPosts(int id, CancellationToken ct = default)
         {
-            return await dbContext.Users.Where(u => u.Id == id).Include(x => x.Blogs).ToListAsync(ct);
+            return await dbContext.Users.Where(u => u.Id == id).Include(x => x.Blogs).ThenInclude(b => b.Posts).ToListAsync(ct);
         }
     }
 }

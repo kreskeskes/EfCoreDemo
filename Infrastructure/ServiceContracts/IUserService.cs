@@ -3,12 +3,12 @@
     public interface IUserService
     {
         /// <summary>
-        /// Updates user name in tracked state (shows ChangeTracker behavior).
+        /// Updates user name in tracked state.
         /// </summary>
         Task<User?> UpdateNameTrackedAsync(int id, string newName, CancellationToken ct = default);
 
         /// <summary>
-        /// Updates user name with AsNoTracking (for performance comparison).
+        /// Updates user name with AsNoTracking.
         /// </summary>
         Task<User?> UpdateNameNotTrackedAsync(int id, string newName, CancellationToken ct = default);
 
@@ -21,6 +21,12 @@
         /// Transfers blogs and posts from one user to another in a single transaction.
         /// </summary>
         Task<bool> TransferBlogsAsync(int fromUserId, int toUserId, CancellationToken ct = default);
+
+
+        /// <summary>
+        /// Transfers blogs and posts from one user to another in a single transaction with savepoints.
+        /// </summary>
+        Task<bool> TransferBlogsWithSavepointsAsync(int fromUserId, int toUserId, CancellationToken ct = default);
 
         /// <summary>
         /// Creates a new user.
@@ -40,6 +46,6 @@
         /// <summary>
         /// Returns blogs by user id
         /// </summary>
-        Task<List<User>> GetUserWithBlogs(int Id, CancellationToken ct = default);
+        Task<List<User>> GetUserWithBlogsAndPosts(int Id, CancellationToken ct = default);
     }
 }
